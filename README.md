@@ -2,7 +2,7 @@
 
 Minimal chatbot using **Program AB** implementation of the **AIML 2.0** draft specification.
 
-![Version](https://img.shields.io/badge/version-0.0.3-brightgreen.svg)
+![Version](https://img.shields.io/badge/version-0.0.3-2AAB92.svg)
 ![Static Badge](https://img.shields.io/badge/Last%20update-20%20Dec%202022-blue)
 
 [![Version](https://img.shields.io/badge/JDK-17-red.svg)](https://jdk.java.net/17/)
