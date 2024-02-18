@@ -1,0 +1,63 @@
+<zk xmlns:n="native">
+    <nodom viewModel="@id('mainVm') @init('com.example.aimlchatbot.vm.MainVm')">
+
+        <n:section class="mt-3">
+
+            <n:div class="container">
+
+                <div style="width:500px">
+
+                    <n:div class="bg-primary text-white bg-gradient rounded-top p-2">
+                        <label value="Super bot" sclass="h4"/>
+                    </n:div>
+                    <div hflex="1" sclass="p-3 bg-light border rounded-bottom overflow-auto d-flex flex-column-reverse"
+                         style="max-height:780px">
+                        <div hflex="1">
+                            <div children="@load(mainVm.messages)">
+                                <template name="children" var="m">
+                                    <n:div class="d-flex mt-3">
+                                        <div if="${m.from eq 'You'}">
+                                            <image src="/img/avatar-man.png" height="64px" width="64px"/>
+                                        </div>
+                                        <div sclass="flex-grow-1" if="${m.from eq 'You'}">
+                                            <n:div class="text-start border rounded ms-2 p-2 bg-primary bg-gradient bg-opacity-25">
+                                                <label value="${m.message}"/>
+                                            </n:div>
+                                            <n:div class="text-end small">
+                                                <label sclass="small"
+                                                       value="@init(m.sentOn) @converter('formattedLocalDateTime', format='HH:mm')"/>
+                                            </n:div>
+                                        </div>
+                                        <div sclass="flex-grow-1" if="${m.from ne 'You'}">
+                                            <n:div class="text-end border rounded me-2 p-2 bg-info bg-gradient bg-opacity-25">
+                                                <label value="${m.message}"/>
+                                            </n:div>
+                                            <n:div class="text-start small">
+                                                <label sclass="small"
+                                                       value="@init(m.sentOn) @converter('formattedLocalDateTime', format='HH:mm')"/>
+                                            </n:div>
+                                        </div>
+                                        <div if="${m.from ne 'You'}">
+                                            <image src="/img/avatar-zombie.png" height="64px" width="64px"/>
+                                        </div>
+                                    </n:div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div hflex="1">
+                        <inputgroup hflex="1" sclass="mt-3">
+                            <textbox value="@bind(mainVm.inputValue)" onOK="@command('sendMessage')" hflex="1"/>
+                            <button label="Send" onClick="@command('sendMessage')" sclass="bg-primary"/>
+                        </inputgroup>
+                    </div>
+
+                </div>
+
+            </n:div>
+
+        </n:section>
+
+    </nodom>
+</zk>

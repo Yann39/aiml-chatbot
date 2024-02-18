@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+    <category>
+        <pattern>*</pattern>
+        <template>Je ne comprend pas.</template>
+    </category>
+
+    <category>
+        <pattern>BONJOUR</pattern>
+        <template>
+            <random>
+                <li>J'espère que vous allez bien</li>
+                <li>Comment allez-vous aujourd'hui ?</li>
+                <li>Je suis à votre disposition</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MON NOM EST *</pattern>
+        <template>Heureux de vous rencontrer
+            <set name="userName">
+                <star/>
+            </set>
+            !
+        </template>
+    </category>
+
+    <category>
+        <pattern>BYE</pattern>
+        <template>A bientôt
+            <get name="userName"/>.
+        </template>
+    </category>
+
+    <category>
+        <pattern>J'AIMERAIS CONNAÎTRE MA NOTE D'EXAMEN</pattern>
+        <template>
+            <condition name="userName">
+                <li>
+                    <value>Yann</value>Désolé de vous l'apprendre <get name="userName"/>, mais vous avez eu 1/6
+                </li>
+                <li>Bien sûr, pouvez-vous m'indiquez votre nom ?</li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUELLE EST MA *</pattern>
+        <template>
+            <srai>J'AIMERAIS CONNAÎTRE MA <star/></srai>
+        </template>
+    </category>
+
+
+</aiml>

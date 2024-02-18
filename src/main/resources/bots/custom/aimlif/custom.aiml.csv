@@ -1,0 +1,6 @@
+0,*,*,*,Je ne comprend pas.,custom.aiml
+0,BONJOUR,*,*,<random>#Newline                <li>J'espère que vous allez bien</li>#Newline                <li>Comment allez-vous aujourd'hui ?</li>#Newline                <li>Je suis à votre disposition</li>#Newline            </random>,custom.aiml
+0,MON NOM EST *,*,*,Heureux de vous rencontrer#Newline            <set name="userName">#Newline                <star/>#Newline            </set>#Newline            !,custom.aiml
+0,BYE,*,*,A bientôt#Newline            <get name="userName"/>.,custom.aiml
+0,J'AIMERAIS CONNAÎTRE MA NOTE D'EXAMEN,*,*,<condition name="userName">#Newline                <li>#Newline                    <value>Yann</value>Désolé de vous l'apprendre <get name="userName"/>#Comma mais vous avez eu 1/6#Newline                </li>#Newline                <li>Bien sûr#Comma pouvez-vous m'indiquez votre nom ?</li>#Newline            </condition>,custom.aiml
+0,QUELLE EST MA *,*,*,<srai>J'AIMERAIS CONNAÎTRE MA <star/></srai>,custom.aiml
