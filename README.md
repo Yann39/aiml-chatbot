@@ -2,13 +2,13 @@
 
 Minimal chatbot using **Program AB** implementation of the **AIML 2.0** draft specification.
 
-![Version](https://img.shields.io/badge/version-0.0.3-2AAB92.svg)
+![Version](https://img.shields.io/badge/Version-0.0.3-2AAB92.svg)
 ![Static Badge](https://img.shields.io/badge/Last%20update-20%20Dec%202022-blue)
 
-[![Version](https://img.shields.io/badge/JDK-17-red.svg)](https://jdk.java.net/17/)
-[![Version](https://img.shields.io/badge/Spring%20Boot-2.7.5-green.svg)](https://spring.io/projects/spring-boot)
-[![Version](https://img.shields.io/badge/ZK-9.6.0-blue.svg)](https://www.zkoss.org/)
-[![Version](https://img.shields.io/badge/Bootstrap-5.2.2-purple.svg)](https://getbootstrap.com/)
+![Version](https://img.shields.io/badge/JDK-17-red.svg)
+![Version](https://img.shields.io/badge/Spring_Boot-2.7.5-green.svg)
+![Version](https://img.shields.io/badge/ZK-9.6.0-blue.svg)
+![Version](https://img.shields.io/badge/Bootstrap-5.2.2-purple.svg)
 
 ---
 
@@ -24,16 +24,16 @@ Minimal chatbot using **Program AB** implementation of the **AIML 2.0** draft sp
 <table>
   <tr>
     <td>
-        <img alt="Java logo" src="logo-java.svg" height="72"/>
+        <img alt="Java logo" src="doc/logo-java.svg" height="72"/>
     </td>
     <td>
-        <img alt="Spring logo" src="logo-spring.svg" height="36"/>
+        <img alt="Spring logo" src="doc/logo-spring.svg" height="36"/>
     </td>
     <td>
-        <img alt="ZK logo" src="logo-zk.svg" height="96"/>
+        <img alt="ZK logo" src="doc/logo-zk.svg" height="96"/>
     </td>
     <td>
-        <img alt="H2 logo" src="logo-bootstrap.svg" height="56"/>
+        <img alt="Bootstrap logo" src="doc/logo-bootstrap.svg" height="56"/>
     </td>
   </tr>
 </table>
@@ -75,10 +75,10 @@ Then simply run the program and reach <http://localhost:8080>.
 <table>
   <tr>
     <td>
-      <img alt="Spring logo" src="screen-chatbot2.png"/>
+      <img alt="Screenshot chatbot super" src="doc/screen-chatbot2.png"/>
     </td>
     <td>
-      <img alt="Spring logo" src="screen-chatbot.png"/>
+      <img alt="Screenshot chatbot custom" src="doc/screen-chatbot.png"/>
     </td>
   </tr>
 </table>
